@@ -18,7 +18,6 @@ public class ModePickerActivity extends Activity implements OnClickListener{
         classic_butt.setOnClickListener(this);
       }
 
-      @Override
       public void onClick(View v) {
         switch (v.getId()) {
         case R.id.classic_butt:
