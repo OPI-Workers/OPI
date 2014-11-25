@@ -1288,7 +1288,6 @@ containing a value of this type.
         public static final int action_mode_close_button=0x7f0a0024;
         public static final int activity_chooser_view_content=0x7f0a0025;
         public static final int advice_butt1=0x7f0a003d;
-        public static final int advice_butt2=0x7f0a003e;
         public static final int advice_butt3=0x7f0a003f;
         public static final int always=0x7f0a000f;
         public static final int beginning=0x7f0a0016;
@@ -1308,6 +1307,7 @@ containing a value of this type.
         public static final int end=0x7f0a0017;
         public static final int expand_activities_button=0x7f0a0026;
         public static final int expanded_menu=0x7f0a002c;
+        public static final int hint50=0x7f0a003e;
         public static final int home=0x7f0a0000;
         public static final int homeAsUp=0x7f0a000a;
         public static final int home_butt=0x7f0a0040;

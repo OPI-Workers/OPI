@@ -20,7 +20,7 @@
             android:src="@drawable/abc_ab_bottom_solid_dark_holo" />
 
         <ImageButton
-            android:id="@+id/advice_butt2"
+            android:id="@+id/hint50"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_toLeftOf="@+id/advice_butt2"
+            android:layout_toLeftOf="@+id/hint50"
             android:background="@null"
             android:src="@drawable/abc_ab_bottom_solid_dark_holo" />
 

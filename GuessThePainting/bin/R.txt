@@ -450,7 +450,6 @@ int id action_menu_presenter 0x7f0a0003
 int id action_mode_close_button 0x7f0a0024
 int id activity_chooser_view_content 0x7f0a0025
 int id advice_butt1 0x7f0a003d
-int id advice_butt2 0x7f0a003e
 int id advice_butt3 0x7f0a003f
 int id always 0x7f0a000f
 int id beginning 0x7f0a0016
@@ -470,6 +469,7 @@ int id edit_query 0x7f0a0030
 int id end 0x7f0a0017
 int id expand_activities_button 0x7f0a0026
 int id expanded_menu 0x7f0a002c
+int id hint50 0x7f0a003e
 int id home 0x7f0a0000
 int id homeAsUp 0x7f0a000a
 int id home_butt 0x7f0a0040

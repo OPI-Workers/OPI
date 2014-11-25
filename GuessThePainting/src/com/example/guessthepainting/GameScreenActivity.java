@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -47,6 +48,8 @@ public class GameScreenActivity extends Activity implements OnClickListener {
 	    {
 	        b.setOnClickListener(this);
 	    }
+	    ImageButton hint = (ImageButton) findViewById(R.id.hint50);
+	    hint.setOnClickListener(this);
 	    
 	    PictureContext context = new PictureContext(this);
 		amountOfPictures = context.countPictures();
@@ -57,6 +60,11 @@ public class GameScreenActivity extends Activity implements OnClickListener {
 	@SuppressWarnings("static-access")
 	protected void getRound()
 	{
+		for (Button b : buttons)
+	    {
+	        b.setVisibility(View.VISIBLE);
+	    }
+		
 		PictureContext context = new PictureContext(this);
 		do
 		{
@@ -107,6 +115,25 @@ public class GameScreenActivity extends Activity implements OnClickListener {
 		getRound();
 	}
 	
+	private void getHint50and50()
+	{
+		boolean done = false;
+		int firstHidden = -1;
+		while(!done)
+		{
+			Random rand = new Random();
+			int random = rand.nextInt(3);
+			if (random != rightAnswerPosition && random != firstHidden)
+			{
+				buttons.get(random).setVisibility(View.INVISIBLE);
+				if (firstHidden == -1)
+					firstHidden = random;
+				else
+					done = true;
+			}
+		}
+	}
+	
 	public void onClick(View v) {
         switch (v.getId()) {
         case R.id.button5:
@@ -121,6 +148,11 @@ public class GameScreenActivity extends Activity implements OnClickListener {
         case R.id.button8:
         	checkAnswer(3);
           break;
+        case R.id.hint50:
+        	this.getHint50and50();
+        	// Убрать на релиз
+        	//((ImageButton) findViewById(R.id.hint50)).setVisibility(View.INVISIBLE);
+        	break;
         default:
           break;
         }
