@@ -29,6 +29,8 @@ public class GameScreenActivity extends Activity implements OnClickListener {
 	
 	protected int amountOfPictures;
 	
+	protected int currentRandom;
+	
 	protected List<Integer> playedPictures;
 	
 	protected List<Button> buttons;
@@ -69,11 +71,12 @@ public class GameScreenActivity extends Activity implements OnClickListener {
 		do
 		{
 			Random rand = new Random();
-			int random = rand.nextInt(amountOfPictures);
-			rightAnswer = context.getPictureById(random);
+			currentRandom = rand.nextInt(amountOfPictures);
 		}
-		while (playedPictures.contains(rightAnswer));
-
+		while (playedPictures.contains(currentRandom));
+		
+		rightAnswer = context.getPictureById(currentRandom);
+		
         List<String> wrongAnswers = context.getWrongAnswers(rightAnswer.getId());
 		
 		Random random = new Random();
@@ -112,7 +115,14 @@ public class GameScreenActivity extends Activity implements OnClickListener {
 		}
 		TextView calc = (TextView) findViewById(R.id.calc);
 		calc.setText(rightChoosesCounter + "/" + (rightChoosesCounter + wrongChoosesCounter));
-		getRound();
+		try
+		{
+			getRound();
+		}
+		catch (Exception ex)
+		{
+			String s;
+		}
 	}
 	
 	private void getHint50and50()

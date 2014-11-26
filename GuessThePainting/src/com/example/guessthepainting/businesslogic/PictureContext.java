@@ -106,6 +106,7 @@ public class PictureContext implements IPictureContext
 	{
 		try 
 		{
+			String rightAuthor = this.getPictureById(rightAnswerId).getAuthor();
 			List<Integer> Ids = new ArrayList<Integer>(3);
 			int amount = this.countPictures();
 			do
@@ -147,8 +148,22 @@ public class PictureContext implements IPictureContext
 		        								xpp.next();
 		        								if (xpp.getEventType() == XmlPullParser.TEXT)
 		        								{
-		        									authors.add(xpp.getText());
-		        									int aa = authors.size();
+		        									if (xpp.getText() != rightAuthor)
+		        									{
+			        									authors.add(xpp.getText());
+		        									}
+		        									else
+		        									{
+		        										String author;
+		        										do
+		        										{
+			        										Random random = new Random();
+			        										int rand = random.nextInt(this.countPictures());
+			        										author = this.getPictureById(rand).getAuthor();
+		        										}
+		        										while (author == rightAuthor || authors.contains(author));
+		        										authors.add(author);
+		        									}
 		        									if (authors.size() > 2) 
 		        										return authors;
 		        								}
