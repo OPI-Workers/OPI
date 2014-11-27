@@ -24,6 +24,8 @@
         </activity>
         <activity android:name="GameScreenActivity"></activity>
         <activity android:name="ModePickerActivity"></activity>
+        <activity android:name="SettingsActivity"></activity>
+        <activity android:name="AboutActivity"></activity>
     </application>
 
 </manifest>
