@@ -9,8 +9,9 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Выберите режим"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:text="Режим"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30dp" />
 
     <RadioGroup
         android:id="@+id/radioGroup1"
@@ -23,19 +24,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="10 картин" />
+            android:text="10 картин"
+            android:textSize="30dp" />
 
         <RadioButton
             android:id="@+id/radio1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="30 картин" />
+            android:text="30 картин"
+            android:textSize="30dp" />
 
         <RadioButton
             android:id="@+id/radio2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="50 картин" />
+            android:text="50 картин"
+            android:textSize="30dp" />
 
     </RadioGroup>
 

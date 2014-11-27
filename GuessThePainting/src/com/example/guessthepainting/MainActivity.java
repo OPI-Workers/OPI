@@ -35,9 +35,11 @@ public class MainActivity extends Activity implements OnClickListener{
         case R.id.settings_butt:
         	intent1 = new Intent(this, SettingsActivity.class);
             startActivity(intent1);
+            break;
         case R.id.about_butt:
         	intent1 = new Intent(this, AboutActivity.class);
             startActivity(intent1);
+            break;
         default:
           break;
         }

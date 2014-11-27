@@ -9,13 +9,13 @@ import android.widget.RadioGroup;
 
 public class SettingsActivity extends Activity {
 	  public RadioGroup radioGroup;
-	  
+	  int selectedId;
 	protected void onCreate(Bundle savedInstanceState) {
 	    super.onCreate(savedInstanceState);
 	    setContentView(R.layout.activity_settings);
 	    
 		radioGroup = (RadioGroup) findViewById(R.id.radioGroup1);
-		int selectedId = radioGroup.getCheckedRadioButtonId();
+		selectedId = radioGroup.getCheckedRadioButtonId();
 	    
 	  }
 }

@@ -9,20 +9,27 @@
 
     <Button
         android:id="@+id/start_butt"
-        android:layout_width="170dp"
-        android:layout_height="wrap_content"
-        android:text="Начать игру" />
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:background="@drawable/grad_bbb"
+        android:text="Начать игру"
+        android:textSize="30dp" />
 
     <Button
         android:id="@+id/settings_butt"
-        android:layout_width="170dp"
-        android:layout_height="wrap_content"
-        android:text="Настройки" />
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:background="@drawable/grad_bbb"
+        android:text="Настройки"
+        android:textSize="30dp" />
 
     <Button
         android:id="@+id/about_butt"
-        android:layout_width="170dp"
-        android:layout_height="wrap_content"
-        android:text="О разработчиках" />
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:background="@drawable/grad_bbb"
+        android:minHeight="70dp"
+        android:text="О разработчиках"
+        android:textSize="30dp" />
 
 </LinearLayout>

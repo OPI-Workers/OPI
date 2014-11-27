@@ -12,21 +12,12 @@
 
         <ImageButton
             android:id="@+id/hint50"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
-            android:background="@null"
+            android:background="@drawable/grad_bb"
             android:src="@drawable/untitled" />
-
-        <ImageButton
-            android:id="@+id/home_butt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:background="@null"
-            android:src="@drawable/home" />
 
         <TextView
             android:id="@+id/calc"
@@ -34,7 +25,9 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="14dp"
             android:layout_toLeftOf="@+id/hint50"
-            android:text="0/0" />
+            android:gravity="bottom"
+            android:text="0/0"
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/rightwrong"
@@ -43,7 +36,8 @@
             android:layout_alignBottom="@+id/calc"
             android:layout_alignTop="@+id/calc"
             android:layout_marginLeft="20dp"
-            android:layout_toRightOf="@+id/home_butt" />
+            android:gravity="bottom"
+            android:textSize="20dp" />
 
     </RelativeLayout>
 
@@ -61,14 +55,14 @@
         <Button
             android:id="@+id/button5"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:layout_weight="0.50"
             android:text="Вариант 1" />
 
         <Button
             android:id="@+id/button6"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:layout_weight="0.50"
             android:text="Вариант 2" />
     </LinearLayout>
@@ -80,14 +74,14 @@
         <Button
             android:id="@+id/button7"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:layout_weight="0.50"
             android:text="Вариант 3" />
 
         <Button
             android:id="@+id/button8"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:layout_weight="0.50"
             android:text="Вариант 4" />
     </LinearLayout>
